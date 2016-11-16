@@ -93,4 +93,22 @@ class MechanismSTV(Mechanism):
 		can be found
 		"""	
 	
-	
+
+	#Basic main that should get the winner
+	# Phil still an't load prefpy....
+def main():
+	filename = "test.txt"
+	candmap, rankmaps, rankmapcounts, numvoters = read_election_file(filename)
+	prof = Profile(candmap, rankMaps)
+	dropped = []
+
+	while(dropped.len < candmap.len-1)
+		dropped = computeRoundLoser(prof, dropped)
+
+	for name in dropped:
+		if name not in candmap:
+			print name
+
+
+
+main()
